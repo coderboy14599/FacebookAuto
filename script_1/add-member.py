@@ -216,15 +216,15 @@ def main():
 	GroupNameEntry = Entry(Frame1,bg="white",fg="black",bd=0,exportselection=0,font = ('arial', 16),justify="left",textvariable=grp)
 	GroupNameEntry.grid(row=2,column=1)
 
-	imagetest1 = PhotoImage(file="reset-icon.gif")
+	imagetest1 = PhotoImage(file="assets/reset-icon.gif")
 	reset_button = Button(Frame2,image=imagetest1,  borderwidth = 0, bg = "white",fg="white", command = reset,relief=RAISED)
 	reset_button.grid(row = 0, column = 1) 
 
-	imagetest2 = PhotoImage(file="login-icon.gif")
+	imagetest2 = PhotoImage(file="assets/login-icon.gif")
 	login_button = Button(Frame2,image=imagetest2,  borderwidth = 0, bg = "white",fg="white",relief=RAISED,command=MainActivity)
 	login_button.grid(row = 0, column = 2)
 
-	imagetest3 = PhotoImage(file="exit-icon.gif")
+	imagetest3 = PhotoImage(file="assets/exit-icon.gif")
 	exit_button = Button(Frame2,image=imagetest3,  borderwidth = 0, bg = "white",fg="white", command = root.quit,relief=RAISED)
 	exit_button.grid(row = 0, column = 3)
 
